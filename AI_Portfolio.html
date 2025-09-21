@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Portfolio - Harsh Nimavat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-gray-800 mb-2;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-500 mb-12 max-w-2xl mx-auto;
+        }
+        .modal-overlay {
+            @apply fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Harsh Nimavat</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                <a href="#process" class="text-gray-600 hover:text-blue-600 transition">How It Works</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition shadow">Contact Me</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t border-gray-200">
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+            <a href="#process" class="block py-2 text-gray-600 hover:text-blue-600">How It Works</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full text-center">Contact Me</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">Supercharge Your Business with a <span class="text-blue-600">$100 AI Automation.</span></h1>
+                <p class="mt-6 text-xl text-gray-500 max-w-3xl mx-auto">I build and deploy small-scale, high-impact AI automations for busy professionals and small businesses. Get your first project delivered in 48 hours.</p>
+                <a href="#projects" class="mt-10 inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">Browse $100 Projects</a>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Get Started in 3 Simple Steps</h2>
+                <p class="section-subtitle">A seamless process to build confidence and get your project delivered, hassle-free.</p>
+                <div class="grid md:grid-cols-3 gap-10 md:gap-16 max-w-5xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-20 w-20 flex items-center justify-center">
+                            <i data-lucide="mouse-pointer-click" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-800">1. Choose Your Project</h3>
+                        <p class="mt-2 text-gray-500">Pick from a catalog of proven $100 automation solutions designed to solve common business problems.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-20 w-20 flex items-center justify-center">
+                            <i data-lucide="key-round" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-800">2. Provide Access</h3>
+                        <p class="mt-2 text-gray-500">Securely provide the necessary information or access credentials via a simple, encrypted form.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-20 w-20 flex items-center justify-center">
+                            <i data-lucide="rocket" class="h-10 w-10"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-800">3. Launch & Optimize</h3>
+                        <p class="mt-2 text-gray-500">I'll build and deploy your automation, providing a video walkthrough and 7 days of complimentary support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center">My $100 AI Power-Ups</h2>
+                <p class="section-subtitle">A catalog of pre-defined, high-value automation projects. Each designed to deliver maximum impact for a minimal investment.</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1: AI Chatbot -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-gray-800">The 24/7 AI Lead Capture Bot</h3>
+                        <p class="mt-2 text-sm text-gray-500 italic">"My website gets visitors, but they leave without contacting me."</p>
+                        <p class="mt-4 text-gray-600 flex-grow"><span class="font-semibold text-blue-600">The $100 Solution:</span> I'll install an AI chatbot on your site to engage visitors, ask qualifying questions, and send captured leads directly to your email or a Google Sheet.</p>
+                        <div class="mt-4">
+                            <p class="text-sm font-semibold text-gray-700 mb-2">Tools:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Tidio / Crisp</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Voiceflow</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Google Sheets</span>
+                            </div>
+                        </div>
+                        <button class="mt-6 w-full bg-blue-50 text-blue-600 font-semibold py-2 rounded-lg border border-blue-200 hover:bg-blue-100 transition view-demo-btn" data-video-id="VIDEO_ID_1_HERE">
+                            Demo Video <span class="text-xs font-normal">(coming soon)</span>
+                        </button>
+                    </div>
+
+                    <!-- Project Card 2: Content Repurposing -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-gray-800">Content Repurposing Engine</h3>
+                        <p class="mt-2 text-sm text-gray-500 italic">"I write a blog post but have no time to create social media content."</p>
+                        <p class="mt-4 text-gray-600 flex-grow"><span class="font-semibold text-blue-600">The $100 Solution:</span> An automation that auto-generates 5+ social media posts (Twitter, LinkedIn etc.) from a new blog post and saves them as drafts in your scheduler or a Google Doc.</p>
+                         <div class="mt-4">
+                            <p class="text-sm font-semibold text-gray-700 mb-2">Tools:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">N8N / Make.com</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">OpenAI (GPT-4)</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Google Docs</span>
+                            </div>
+                        </div>
+                        <button class="mt-6 w-full bg-blue-50 text-blue-600 font-semibold py-2 rounded-lg border border-blue-200 hover:bg-blue-100 transition view-demo-btn" data-video-id="VIDEO_ID_2_HERE">
+                           Demo Video <span class="text-xs font-normal">(coming soon)</span>
+                        </button>
+                    </div>
+
+                    <!-- Project Card 3: Email Sorter -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-gray-800">Intelligent Email Sorter</h3>
+                        <p class="mt-2 text-sm text-gray-500 italic">"My inbox is flooded, and I can't tell which inquiries are urgent leads."</p>
+                        <p class="mt-4 text-gray-600 flex-grow"><span class="font-semibold text-blue-600">The $100 Solution:</span> I'll create an automation that reads incoming emails, classifies them using AI (e.g., 'Lead', 'Support', 'Spam'), and automatically applies the correct label in your Gmail or Outlook.</p>
+                         <div class="mt-4">
+                            <p class="text-sm font-semibold text-gray-700 mb-2">Tools:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">N8N / Make.com</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">OpenAI API</span>
+                                <span class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Gmail / Outlook</span>
+                            </div>
+                        </div>
+                        <button class="mt-6 w-full bg-blue-50 text-blue-600 font-semibold py-2 rounded-lg border border-blue-200 hover:bg-blue-100 transition view-demo-btn" data-video-id="VIDEO_ID_3_HERE">
+                           Demo Video <span class="text-xs font-normal">(coming soon)</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://i.postimg.cc/kXCvzkx9/BWAI-profile.png" alt="Harsh Nimavat - AI Automation Specialist" class="rounded-full w-64 h-64 mx-auto md:w-full md:h-auto shadow-lg">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="section-title">A Bit About Me</h2>
+                        <p class="mt-4 text-gray-600 leading-relaxed">I'm a passionate AI and automation specialist dedicated to helping small businesses and entrepreneurs reclaim their time. I believe that powerful technology shouldn't be complex or expensive. My focus is on delivering practical, high-return solutions that work from day one.</p>
+                        <p class="mt-4 text-gray-600 leading-relaxed">With expertise in tools like N8N, Make.com, and various AI APIs, I translate your manual processes into efficient, automated workflows. My goal is to be your go-to partner for accessible automation, starting with your first $100 project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                 <h2 class="section-title text-center">Frequently Asked Questions</h2>
+                 <div class="mt-10 space-y-4">
+                     <div class="bg-gray-50 border-l-4 border-blue-500 rounded-r-lg p-6">
+                         <h3 class="font-semibold text-gray-800">What do you need from me to start?</h3>
+                         <p class="mt-2 text-gray-600">Once you select a project, you'll receive a secure form to provide details, access credentials for the necessary platforms (like your website admin or N8N account), and any specific text or questions you want the AI to use.</p>
+                     </div>
+                      <div class="bg-gray-50 border-l-4 border-blue-500 rounded-r-lg p-6">
+                         <h3 class="font-semibold text-gray-800">What if I'm not happy with the result?</h3>
+                         <p class="mt-2 text-gray-600">Your satisfaction is guaranteed. I provide 7 days of free support and revisions after delivery to ensure the automation works exactly as described. If you're still not satisfied, I offer a full refund.</p>
+                     </div>
+                      <div class="bg-gray-50 border-l-4 border-blue-500 rounded-r-lg p-6">
+                         <h3 class="font-semibold text-gray-800">Are there any hidden or ongoing costs?</h3>
+                         <p class="mt-2 text-gray-600">My $100 fee covers the entire setup and deployment. I will be fully transparent about any third-party tool costs. Most projects can be run on free tiers of platforms like N8N or Tidio, but if your usage requires a paid plan (e.g., for high-volume API calls), I will inform you beforehand.</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-blue-600">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Ready to Automate Your First Task?</h2>
+                <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">Let's eliminate a tedious task from your to-do list forever. Send me an email to discuss your needs, or purchase your first AI Power-Up directly.</p>
+                <a href="mailto:harshnimavat21@gmail.com" class="mt-10 inline-block bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">Send an Inquiry Email</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Harsh Nimavat. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/harsh-h-nimavat-0a2496142" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400"><i data-lucide="linkedin" class="h-6 w-6"></i></a>
+                <a href="mailto:harshnimavat21@gmail.com" class="hover:text-blue-400"><i data-lucide="mail" class="h-6 w-6"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal-overlay hidden opacity-0">
+        <div class="bg-white rounded-lg w-11/12 max-w-4xl shadow-xl transform transition-transform duration-300 scale-95">
+            <div class="flex justify-end p-2">
+                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-800">
+                    <i data-lucide="x" class="h-8 w-8"></i>
+                </button>
+            </div>
+            <div id="video-container" class="aspect-w-16 aspect-h-9 p-4">
+                <!-- YouTube/Loom embed will go here -->
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Video Modal Logic
+        const viewDemoButtons = document.querySelectorAll('.view-demo-btn');
+        const videoModal = document.getElementById('video-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const videoContainer = document.getElementById('video-container');
+
+        viewDemoButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const videoId = button.getAttribute('data-video-id');
+                // IMPORTANT: Replace with your video embed code.
+                // This example uses a YouTube embed URL. For Loom, use their embed code.
+                if (videoId.startsWith('VIDEO_ID')) {
+                     videoContainer.innerHTML = `<div class="bg-gray-200 h-full flex items-center justify-center rounded-md"><p class="text-gray-500">Please update the video ID in the HTML.</p></div>`;
+                } else {
+                     videoContainer.innerHTML = `<iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                }
+               
+                videoModal.classList.remove('hidden');
+                setTimeout(() => {
+                    videoModal.classList.remove('opacity-0');
+                    videoModal.querySelector('div').classList.remove('scale-95');
+                }, 10);
+            });
+        });
+
+        function closeModal() {
+            videoModal.classList.add('opacity-0');
+            videoModal.querySelector('div').classList.add('scale-95');
+            setTimeout(() => {
+                videoModal.classList.add('hidden');
+                videoContainer.innerHTML = ''; // Clear video to stop playback
+            }, 300);
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
